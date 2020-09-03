@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>know us</title>
+</head>
+<style>
+body
+{
+  background: green;
+}
+@keyframes myMove
+{
+   0% {left: 0px;}
+   25% {left: 0px;}
+   50% {left: 1000px;}
+   75% {left: 1000px;}
+   100% {left: 0px;}
+} 
+@-webkit-keyframes myMove
+{
+   0% {left: 0px;}
+   25% {left: 0px;}
+   50% {left: 1000px;}
+   75% {left: 1000px;}
+   100% {left: 0px;}
+} 
+@-moz-keyframes myMove
+{
+  0% {left: 0px;}
+   25% {left: 0px;}
+   50% {left: 1000px;}
+   75% {left: 1000px;}
+   100% {left: 0px;}
+} 
+h1
+{
+ 
+  color: red;
+  position: relative;
+  animation: myMove 10s infinite;
+  -webkit-animation: myMove 10s infinite;
+  -moz-animation: myMove 10s infinite;
+}
+</style>
+<header>
+<h1>    
+??RATE US HERE??
+</h1>
+</header>
+<body>
+<center>
+        <form>
+        First Name: <input type="text" placeholder="firstname"/><br></br>
+         Last Name: <input type="text" placeholder="surname"/><br></br>
+         Your Name: <input type="email" placeholder="email"/><br></br>
+         <label>Gender:</label>
+         <input type="radio" name="radio"/>Male
+          <input type="radio" name="radio"/>Female<br></br>
+           <label>Country: </label>
+           <select>
+           <option>SELECT</option>
+           <option>NIGERIA</option>
+           <option>SOUTH AFRICA</option>
+           <option>MALAWI</option>
+           <option>BOTSWANA</option>
+           <option>ZAMBIA</option>
+           <option>ZIMBABWE</option>
+           </select><br></br>
+        <textarea rows="12" cols="40" placeholder="write your message here if you have any suggestion"></textarea><br></br>
+        <input type="submit" value="Submit Now"/>
+        </form>
+</center>
+
+</body>
+</html>

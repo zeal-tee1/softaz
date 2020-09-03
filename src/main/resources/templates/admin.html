@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>login</title>
+</head>
+<style>
+body
+{
+ background-color: red;
+}
+@keyframes myMove
+{
+   0% {left: 0px;}
+   25% {left: 650px;}
+   50% {left: 1000px;}
+   75% {left: 650px;}
+   100% {left: 0px;}
+} 
+@-webkit-keyframes myMove
+{
+   0% {left: 0px;}
+   25% {left: 650px;}
+   50% {left: 1000px;}
+   75% {left: 650px;}
+   100% {left: 0px;}
+} 
+@-moz-keyframes myMove
+{
+   0% {left: 0px;} 
+   25% {left: 650px;}
+   50% {left: 1000px;}
+   75% {left: 650px;}
+   100% {left: 0px;}
+}
+h1
+{
+  color: yellow;
+  position: relative;
+  animation: myMove 3s infinite;
+  -webkit-animation: myMove 3s infinite;
+  -moz-animation: myMove 3s infinite;
+}
+
+</style>
+<header>
+<h1>
+MANAGEMENT LOGIN
+</h1>
+</header>
+<body>
+<center>
+<img alt="" src="admin.jpg" width="200" height="200">
+</center>
+<br></br><br></br>
+<center>
+<form th:action="@{/admin}" th:object="${loginform}" method="post">
+<p th:if="${invalidCredentials}" class="error" >Fill all details</p>
+   <label for="username">Username:</label>
+   <input type="text" id="username" name="username" autofocus="autofocus"/>
+   <br></br><br></br>
+   <label for="password">Password:</label>
+   <input type="password" id="password" name="password"/>
+   <br></br><br></br>
+   <input type="submit" value="Login"/>
+</form>
+</center>
+</body>
+</html>

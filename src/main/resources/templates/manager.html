@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>manage</title>
+</head>
+<style>
+body
+{
+  background-image: url(minija.jpg);
+}
+h5
+{
+   font-size: 20pt;
+   font-family: Agency FB;
+   font-weight: 50;
+   text-indent: 680px;
+}
+h5 a:hover
+{
+  color: orange;
+  text-decoration: underline;
+}
+h5 a
+{ 
+
+text-decoration: none;
+ color: green;
+ margin: 15px;
+}
+</style>
+<header>
+    <h5>
+   <a th:href="@{/index}">HOME</a>
+   <a th:href="@{/orders}">VIEW ORDERS</a>
+   <a th:href="@{/kitchen}">KITCHEN</a>
+   <a th:href="@{/staff}">STAFF</a>
+   <a th:href="@{/driver}">DRIVERS</a>
+    <a th:href="@{/invoice}">INVOICES</a>
+  </h5>
+</header>
+<body>
+<h1></h1>
+</body>
+</html>
